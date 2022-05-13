@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+$color-black:rgb(0, 0, 0);
+$color-pink:rgba(251, 2, 185, 0.658); 
+$color-purple:#512E5F; 
+$color-overcast:#9099A2;
+$color-paper:#D5D5D5;
+$color-lavendar:#6D7993;
+$color-dusty:#96858F;
+$color-white:rgb(255, 255, 255);
+$color-light-gray:#d8d6d6;
+html{
+    font-size: 10px;
+}
+body{
+    background-color: $color-paper;
+    font-family: 'Space Mono',
+    monospace;
+}
+.main{
+    padding: 1rem;
+    text-align: center;
+    margin: 10rem auto;
+    max-width: 80%;
+    height: 50rem;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+    h1{
+        color: $color-pink;
+        font-size: 2.2rem;
+        padding-top: 2rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+        display: inline;
+        // background-color: #512E5F;
+    }
+    .quest{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+       height: 100%;
+       h2{
+           margin: 0 auto;
+           color: $color-lavendar;
+           font-size: 2rem;
+           border: 1px solid $color-lavendar;
+           border-radius: 1rem;
+           width: 90%;
+           padding: 1rem;
+           background-color: $color-light-gray;
+       }
+       .btn{
+           font-size: 1.7rem;
+           border: none;
+           padding: 1rem;
+           margin: 0 auto;
+           width: 20rem;
+           border-radius: .5rem;
+           background: $color-paper;
+           border: 1px solid $color-overcast;
+          font-family: 'Space Mono';
+          font-weight: 600;
+          cursor: pointer;
+          &:hover{
+              background-color: $color-overcast;
+              transition: background .3s;
+              color: white;
+          }
+    
+       }
+    }
+   
+} 
+.footer{
+    border-top: 1px solid $color-lavendar;
+    background-color: rgba(218, 215, 215, 0.781);
+        height: 10rem;
+        text-align: center;
+        font-size: 1rem;
+        h2{
+            margin-top: 2rem;
+        }
+        .create{
+            font-size: 1.5rem;
+            color: $color-pink;
+        }
+    }
+@media (min-width: 600px) {
+    .main { 
+        max-width: 60vh;
+
+    }
+
+}
+

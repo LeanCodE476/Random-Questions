@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #D5D5D5;
+  font-family: "Space Mono", monospace;
+}
+
+.main {
+  padding: 1rem;
+  text-align: center;
+  margin: 10rem auto;
+  max-width: 80%;
+  height: 50rem;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.main h1 {
+  color: rgba(251, 2, 185, 0.658);
+  font-size: 2.2rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+  display: inline;
+}
+.main .quest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.main .quest h2 {
+  margin: 0 auto;
+  color: #6D7993;
+  font-size: 2rem;
+  border: 1px solid #6D7993;
+  border-radius: 1rem;
+  width: 90%;
+  padding: 1rem;
+  background-color: #d8d6d6;
+}
+.main .quest .btn {
+  font-size: 1.7rem;
+  border: none;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 20rem;
+  border-radius: 0.5rem;
+  background: #D5D5D5;
+  border: 1px solid #9099A2;
+  font-family: "Space Mono";
+  font-weight: 600;
+  cursor: pointer;
+}
+.main .quest .btn:hover {
+  background-color: #9099A2;
+  transition: background 0.3s;
+  color: white;
+}
+
+.footer {
+  border-top: 1px solid #6D7993;
+  background-color: rgba(218, 215, 215, 0.781);
+  height: 10rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.footer h2 {
+  margin-top: 2rem;
+}
+.footer .create {
+  font-size: 1.5rem;
+  color: rgba(251, 2, 185, 0.658);
+}
+
+@media (min-width: 600px) {
+  .main {
+    max-width: 60vh;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
